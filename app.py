@@ -3,7 +3,7 @@ import plotly.express as px  # type: ignore
 import streamlit as st
 
 car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
-car_data['odometer'] = car_data['odometer'].fillna(0)
+# car_data['odometer'] = car_data['odometer'].fillna(0)
 hist_button = st.button('Construir histograma')  # crear un botón
 scatter_button = st.checkbox('Construir gráfico de dispersion')
 st.header('Comportamiento de vehiculos en venta')
