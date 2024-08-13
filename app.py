@@ -21,4 +21,4 @@ if scatter_button:
 
     # crear un gráfico de dispersión
     fig = px.scatter(car_data, x="odometer", y="price")
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
